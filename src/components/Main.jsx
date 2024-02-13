@@ -18,6 +18,11 @@ import asgard from "../img/asgard's.webp";
 import peacock from "../img/peacock.webp";
 import supernatural from "../img/supernatural.webp";
 import metaQuest from "../img/metaQuest.webp";
+import womanPic from "../img/vr-woman-pic.webp";
+import model from "../img/model.webp";
+import metaConnect from "../img/meta-connect.webp";
+
+import { PiCaretDownLight } from "react-icons/pi";
 
 import { PiCaretRightBold } from "react-icons/pi";
 import { PiPauseThin } from "react-icons/pi";
@@ -38,8 +43,6 @@ function Main() {
       setPlay(!isPlaying);
     }
   };
-
-
 
   return (
     <main>
@@ -224,6 +227,37 @@ function Main() {
                   <p>Meta Quest+</p>
                 </SwiperSlide>
               </Swiper>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div className="img-para-con">
+            <div className="first-div">
+              <PiCaretDownLight />
+              <p>Latest news</p>
+            </div>
+            <div className="img-para">
+              <div>
+                <div>
+                  <img src={womanPic} alt="" />
+                </div>
+                <p>Meta Quest 3: The First Mass-<br /> Market MixedReality Headset</p>
+              </div>
+              <div>
+                <div>
+                  <img src={model} alt="" />
+                </div>
+                <p>
+                  Introducting the Next-Generation <br />Ray-Ban | Meta Smart Glasses<br /> Collection
+                </p>
+              </div>
+              <div>
+                <div>
+                  <img src={metaConnect} alt="" />
+                </div>
+                <p>Meta Connect 2023 Keynote<br /> Recap</p>
+              </div>
             </div>
           </div>
         </div>

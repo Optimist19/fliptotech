@@ -267,7 +267,7 @@ margin-top: 7vh;
 
 
 .explore-session .game-apps div{
-	font-size: 1.5em;
+	font-size: 1.2em;
 
 }
 .explore-session .game-apps div div{
@@ -278,6 +278,38 @@ margin-top: 7vh;
 	width: 100%;
 }
 
+
 .swiper-pagination-bullet {
 	display: none !important;
+}
+
+
+
+.img-para-con{
+	width: 85%;
+	margin: 0 auto;
+}
+
+
+.img-para-con .first-div{
+	display: flex;
+	gap: 0 1vw;
+}
+
+.img-para {
+	display: flex;
+}
+
+.img-para div p{
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-top: 3vh;
+}
+
+.img-para div div{
+	width: 90%;
+}
+
+.img-para div div img{
+	width: 100%;
 }
