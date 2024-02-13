@@ -1,0 +1,131 @@
+*
+
+nav{
+  position: fixed;
+  z-index: 1;
+}
+
+nav .caret {
+  /* font-weight: bold; */
+}
+
+.free-worry ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 2em;
+  width: 100%;
+  background-color: rgb(149, 242, 211);
+  padding: 0.3em 0;
+}
+
+.free-worry ul {
+  list-style: none;
+}
+
+.free-worry ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 0.3em;
+  cursor: pointer;
+}
+
+/* second nav */
+
+.second-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: antiquewhite;
+  padding: 0.3em 2em;
+  border-bottom: 1px solid black;
+}
+
+.second-nav li, span{
+font-size: .875em;
+}
+
+.second-nav img {
+  width: 100%;
+}
+
+.second-left img{
+	cursor: pointer;
+}
+
+
+
+.second-left {
+  display: flex;
+  align-items: center;
+}
+
+.second-left .logo {
+  width: 10%;
+  margin-right: 7%;
+}
+
+.second-left .after-logo {
+  display: flex;
+  align-items: center;
+  gap: 0 2vw;
+}
+
+.second-left .icon-con ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 0.6em;
+  list-style: none;
+  cursor: pointer;
+
+}
+
+.second-right div {
+  display: flex;
+  justify-content: flex-end;
+  align-self: center;
+  gap: 0 2em;
+}
+
+.second-right div div{
+	cursor: pointer;
+}
+
+.second-right li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.second-right div ul {
+  display: flex;
+  align-items: center;
+  gap: 0 0.6em;
+}
+
+.second-right div ul li:nth-child(2){
+	margin-left: 1vw;
+}
+
+.second-right .search {
+  border: 1px solid red;
+  border-radius: 10px;
+  padding: 0.7em 1em;
+  display: flex;
+  align-items: center;
+  gap: 0 0.5em;
+}
+
+.second-right .icon {
+  font-size: 2em;
+}
+
+.drop-down-con{
+  
+  transition: all 0.5s ease-in-out;
+}
+.drop-down{
+  background-color: white;
+}
+
+

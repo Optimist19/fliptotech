@@ -1,0 +1,195 @@
+main div{
+padding-top: 3vh;
+}
+
+
+video{
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.9);
+}
+
+main .vid-con{
+	background-color: rgba(0, 0, 0, 0.9);
+	/* position: relative; */
+	top: 12vh;
+	min-width: 100%;
+	/* min-height: 100%; */
+	bottom: 0;
+	right: 0;
+	padding-top: 2vh;
+}
+
+.overlay{
+	/* background-color: rgba(0, 0, 0, 0.9); */
+	top: 1vh;
+	position: absolute;
+	/* width: 100%; */
+	height: 100%;
+
+	/* bottom: 0; */
+	left: 6%;
+	
+}
+
+.inner{
+	position: absolute;
+	top: 25%;
+	/* left: 50%; */
+	/* transform: translate(-45%, -45%); */
+	color: aliceblue;
+}
+
+.inner .special{
+	color: #6441D2;
+	padding: 0 0.8em;
+	margin-bottom: 4%;
+	border-radius: 3px;
+	border: none;
+}
+
+
+.inner .h1-p{
+	width: 30vw;
+}
+
+.inner h1{
+	font-size: 4em;
+	margin-bottom: 7%;
+}
+
+.inner p{
+	font-size: 1.125rem;
+	padding-left: 3%;
+}
+
+.inner .bag-learn{
+display: flex;
+align-items: center;
+margin-top: 7vh;
+}
+
+
+
+
+
+.inner .bag-learn button:first-child{
+	padding: 2vh 1vw;
+	border-radius: 20px;
+	border: none;
+	background-color: #4545fc;
+	color: aliceblue;
+	margin-right: 1vw;
+	cursor: pointer;
+}
+
+.inner button:nth-child(2){
+	/* height: 30px;
+	width: 30px; */
+	padding: 1vh 0.5vw;
+	border-radius: 20px;
+	border: none;
+	border-radius: 50%;
+	background-color: white;
+	cursor: pointer;
+}
+
+.inner .learn-more .icon{
+
+	margin-top: 3px;
+	color: blue;
+	font-size: 10px;
+}
+
+.toggle{
+	position: absolute;
+	right: 4%;
+	bottom: -6%;
+}
+
+.toggle button{
+	cursor: pointer;
+	padding: 1vh 0.5vw;
+	border-radius: 20px;
+	border: none;
+	border-radius: 50%;
+	background-color: white;
+	line-height: 3px;
+}
+
+
+.v-r-inner-con{
+	display: flex;
+	margin: 0 auto;
+	gap: 0 2vw;
+	width: 90%;
+	align-items: center;
+}
+
+.more-of-v-r{
+	background-image: url("../img/photo-1576633587382-13ddf37b1fc1.avif");
+	background-repeat: no-repeat;
+	/* padding: 4vh 4vw; */
+	background-size:cover;
+	height: 50vh;
+	width: 50vw;
+	border-radius: 10px;
+}
+
+.v-r .second{
+	background-image: url("../img/gear-vr.png");
+
+}
+
+.v-r .h2-p{
+	margin-left: 2vw;
+	color:aliceblue;
+
+}
+
+.v-r .h2-p h2{
+	font-size: 2.25em;
+
+}
+
+.v-r p{
+	font-size: 1em;
+	width: 20vw;
+	/* text-align: center; */
+}
+
+.v-r .btn-icon-p{
+	display: flex;
+	align-items: center;
+	gap: 1vw;
+	margin-left: 2vw;
+
+}
+
+
+.v-r .btn-icon-p button:first-child{
+	padding: 2vh 1vw;
+	border-radius: 20px;
+	border: none;
+	background-color: #4545fc;
+	color: aliceblue;
+	cursor: pointer;
+}
+
+.v-r .btn-icon-p button:nth-child(2){
+	/* height: 30px;
+	width: 30px; */
+	padding: 1vh 0.5vw;
+	border-radius: 20px;
+	border: none;
+	border-radius: 50%;
+	background-color: white;
+	cursor: pointer;
+}
+
+.v-r .btn-icon-p div .icon{
+
+	margin-top: 3px;
+	color: blue;
+	font-size: 10px;
+}
