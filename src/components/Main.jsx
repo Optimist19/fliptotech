@@ -1,12 +1,27 @@
+import "./Main.css";
+import { useRef, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+
+import { EffectCoverflow, Pagination } from "swiper/modules";
+
 import VR from "../vid/VR.mp4";
+import firstvr from "../img/firstvr.webp";
+import secondvr from "../img/secondvr.webp";
+import thirdvr from "../img/thirdvr.webp";
+import fourthvr from "../img/forthvr.webp";
+import roblox from "../img/roblox.webp";
+import asgard from "../img/asgard's.webp";
+import peacock from "../img/peacock.webp";
+import supernatural from "../img/supernatural.webp";
+import metaQuest from "../img/metaQuest.webp";
 
 import { PiCaretRightBold } from "react-icons/pi";
 import { PiPauseThin } from "react-icons/pi";
 import { IoPlayOutline } from "react-icons/io5";
-
-
-import "./Main.css";
-import { useRef, useState } from "react";
 
 function Main() {
   const myRef = useRef(null);
@@ -24,12 +39,14 @@ function Main() {
     }
   };
 
+
+
   return (
     <main>
       <div>
         <div className="vid">
           <div className="vid-con">
-            <video muted ref={myRef}>
+            <video muted ref={myRef} autoPlay>
               <source src={VR} type="video/mp4" />
             </video>
           </div>
@@ -101,6 +118,112 @@ function Main() {
                 </button>
                 <p>Learn More</p>
               </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div className="vr-shop-products">
+            <div className="header-vr-img">
+              <div className="header">
+                <h2>Shop Meta products</h2>
+                <p>
+                  The future of virtual reality, mixed reality and smart glasses
+                  is here.
+                </p>
+              </div>
+
+              <div className="vr-img-details">
+                <div>
+                  <div>
+                    <img src={firstvr} alt="" />
+                  </div>
+                  <p>Meta Quest</p>
+                  <button>Shop now</button>
+                </div>
+
+                <div>
+                  <div>
+                    <img src={secondvr} alt="" />
+                  </div>
+                  <p>Meta Quest accessories</p>
+                  <button>Shop now</button>
+                </div>
+
+                <div>
+                  <div>
+                    <img src={thirdvr} alt="" />
+                  </div>
+                  <p>Meta Quest mixed reality</p>
+                  <button>Shop now</button>
+                </div>
+
+                <div>
+                  <div>
+                    <img src={fourthvr} alt="" />
+                  </div>
+                  <p>Ray-Ban | Meta smart glasses</p>
+                  <button>Shop now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div className="explore-session">
+            <div className="explore-header">
+              <h3>Explore games and experiences on Meta Quest</h3>
+              <button>Browse apps &amp; games</button>
+            </div>
+
+            <div className="game-apps">
+              <Swiper
+                effect={"coverflow"}
+                grabCursor={true}
+                centeredSlides={true}
+                slidesPerView={"auto"}
+                coverflowEffect={{
+                  rotate: 50,
+                  stretch: 0,
+                  depth: 100,
+                  modifier: 1,
+                  slideShadows: true
+                }}
+                pagination={true}
+                modules={[EffectCoverflow, Pagination]}
+                className="mySwiper">
+                <SwiperSlide>
+                  <div>
+                    <img src={roblox} alt="" />
+                  </div>
+                  <p>Roblox</p>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div>
+                    <img src={asgard} alt="" />
+                  </div>
+                  <p>Asgard&apos;s wrath 2</p>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div>
+                    <img src={peacock} alt="" />
+                  </div>
+                  <p>Peacock</p>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div>
+                    <img src={supernatural} alt="" />
+                  </div>
+                  <p>Supernatural</p>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div>
+                    <img src={metaQuest} alt="" />
+                  </div>
+                  <p>Meta Quest+</p>
+                </SwiperSlide>
+              </Swiper>
             </div>
           </div>
         </div>

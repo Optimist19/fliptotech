@@ -17,39 +17,48 @@ function Nav() {
   const [rayBan, setRayBan] = useState(false);
   const [appsAndGames, setAppsAndGames] = useState(false);
   const [support, setSupport] = useState(false);
-//   const [caretUp, setCaretUp] = useState(false)
+    const [caretUp, setCaretUp] = useState(false)
 
   const handleMetaOver = () => {
     setIsMetaQuest(true);
-	// setCaretUp(true)
+    setCaretUp(true)
   };
 
   const handleMetaLeave = () => {
     setIsMetaQuest(false);
+    setCaretUp(false)
+
   };
 
   const handleRayOver = () => {
     setRayBan(true);
+    setCaretUp(true)
+
   };
 
   const handleRayLeave = () => {
     setRayBan(false);
+    setCaretUp(false);
   };
 
   const handleAppsAndGamesOver = () => {
     setAppsAndGames(true);
+    setCaretUp(true);
   };
 
   const handleAppsAndGamesLeave = () => {
     setAppsAndGames(false);
+    setCaretUp(false);
   };
 
   const handleSupportOver = () => {
     setSupport(true);
+    setCaretUp(true);
   };
 
   const handleSupportLeave = () => {
     setSupport(false);
+    setCaretUp(false);
   };
 
   return (
@@ -134,7 +143,7 @@ function Nav() {
       <div className="drop-down-con">
         {isMetaQuest && (
           <div className="drop-down">
-            <div>
+            <div className="meta-quest">
               <div>
                 <p>Meta Quest overview</p>
                 <p>Meta Quest 3</p>
@@ -155,41 +164,61 @@ function Nav() {
 
         {rayBan && (
           <div className="drop-down">
-            <p>Ray-Ban | Meta overview</p>
-            <p>Shop all</p>
-            <p>Wayfarer</p>
-            <p>Headliner</p>
+            <div className="ray">
+              <p>Ray-Ban | Meta overview</p>
+              <p>Shop all</p>
+              <p>Wayfarer</p>
+              <p>Headliner</p>
+            </div>
           </div>
         )}
 
         {appsAndGames && (
           <div className="drop-down">
-            <p>Meta Quest 3</p>
-            <p>Shop all</p>
-            <p>Meta Quest 3</p>
-            <p>Meta Quest 3</p>
+            <div className="apps">
+              <div>
+                <p> Shop all</p>
+                <p>Social</p>
+                <p>Gaming</p>
+                <p>Fitness</p>
+              </div>
+              <div>
+                <p>Entertainment</p>
+                <p>Productivity</p>
+                <p>Mixed reality</p>
+                <p>Meta Quest+</p>
+              </div>
+            </div>
           </div>
         )}
 
         {support && (
           <div className="drop-down">
-            <p>Store and Device Help Centers</p>
-            <p>Find order</p>
-            <p>Meta Quest and Quest Pro</p>
-            <p>Meta Portal</p>
-            <p>Smart Glasses</p>
-            <p>Meta Help Center</p>
-            <p>Accounts Center</p>
-            <p>Meta Pay</p>
-            <p>Policies</p>
-            <p>Connected Experiences</p>
-            <p>App Help Centers</p>
-            <p>Meta Horizon</p>
-            <p>Facebook</p>
-            <p>Messenger</p>
-            <p>Instagram</p>
-            <p>WhatsApp</p>
-            <p>Workplace</p>
+            <div className="support">
+              <div>
+                <p>Store and Device Help Centers</p>
+                <p>Find order</p>
+                <p>Meta Quest and Quest Pro</p>
+                <p>Meta Portal</p>
+                <p>Smart Glasses</p>
+              </div>
+              <div>
+                <p>Meta Help Center</p>
+                <p>Accounts Center</p>
+                <p>Meta Pay</p>
+                <p>Policies</p>
+                <p>Connected Experiences</p>
+              </div>
+              <div>
+                <p>App Help Centers</p>
+                <p>Meta Horizon</p>
+                <p>Facebook</p>
+                <p>Messenger</p>
+                <p>Instagram</p>
+                <p>WhatsApp</p>
+                <p>Workplace</p>
+              </div>
+            </div>
           </div>
         )}
       </div>

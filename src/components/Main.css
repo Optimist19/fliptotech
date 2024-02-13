@@ -193,3 +193,91 @@ margin-top: 7vh;
 	color: blue;
 	font-size: 10px;
 }
+
+
+
+.vr-shop-products{
+	width: 90%;
+	margin: 0 auto;
+}
+
+.header-vr-img .header{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.header-vr-img .header h2{
+	font-size: 3em;
+	margin-bottom: 3vh;
+}
+
+.header-vr-img .header p{
+	font-size: 1em;
+}
+
+.vr-img-details{
+	display: flex;
+}
+
+.vr-img-details div div{
+	width: 90%;
+}
+
+.vr-img-details div{
+	display: flex;
+	gap: 3vh 0;
+	flex-direction: column;
+	align-items: center;
+}
+
+.vr-img-details img{
+	width: 100%;
+}
+
+.vr-img-details div button{
+	padding: 2vh 2vw;
+	border-radius: 20px;
+	border: none;
+	background-color: #4545fc;
+	color: aliceblue;
+	cursor: pointer;
+}
+
+.explore-session .explore-header{
+	display: flex;
+	/* justify-content: center; */
+	flex-direction: column;
+	align-items: center;
+}
+
+.explore-session .explore-header h3{
+	font-size: 2.5em;
+	margin: 2vh 0;
+}
+
+.explore-session .explore-header button{
+	padding: 2vh 2vw;
+	border-radius: 30px;
+	background-color: white;
+	color: blue;
+	border: 3px solid rgb(163, 157, 157);
+	margin: 2vh 0;
+}
+
+
+.explore-session .game-apps div{
+	font-size: 1.5em;
+
+}
+.explore-session .game-apps div div{
+	width: 65%;
+}
+
+.explore-session img{
+	width: 100%;
+}
+
+.swiper-pagination-bullet {
+	display: none !important;
+}
