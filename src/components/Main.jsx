@@ -242,21 +242,59 @@ function Main() {
                 <div>
                   <img src={womanPic} alt="" />
                 </div>
-                <p>Meta Quest 3: The First Mass-<br /> Market MixedReality Headset</p>
+                <p>
+                  Meta Quest 3: The First Mass-
+                  <br /> Market MixedReality Headset
+                </p>
               </div>
               <div>
                 <div>
                   <img src={model} alt="" />
                 </div>
                 <p>
-                  Introducting the Next-Generation <br />Ray-Ban | Meta Smart Glasses<br /> Collection
+                  Introducting the Next-Generation <br />
+                  Ray-Ban | Meta Smart Glasses
+                  <br /> Collection
                 </p>
               </div>
               <div>
                 <div>
                   <img src={metaConnect} alt="" />
                 </div>
-                <p>Meta Connect 2023 Keynote<br /> Recap</p>
+                <p>
+                  Meta Connect 2023 Keynote
+                  <br /> Recap
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div className="keep-your">
+            <div className="keep-text-con">
+              <p>KEEP YOUR EXPERIENCE UP TO DATE</p>
+            </div>
+            <div>
+              <div className="border-line-btn">
+                <div className="border-line">
+                  <p>Get news and updates from Meta</p>
+                </div>
+                <button>Sign up</button>
+              </div>
+              <div className="para-con">
+                <p>
+                  By signing up you agree to receive updates and marketing
+                  messages (e.g. email, social, etc.) from Meta about
+                  Meta&apos;s existing and future products <br /> and services.
+                </p>
+                <p>
+                  You may withdraw your consent and unsubscribe at any time by
+                  clicking the unsubscribe link included in our messages.
+                </p>
+                <p>
+                  Your subscription is subject to the Terms and Privacy Policy.
+                </p>
               </div>
             </div>
           </div>
