@@ -294,6 +294,8 @@ main .vid-con {
 .keep-your {
   display: grid;
   grid-template-columns: 0.4fr 0.6fr;
+  padding-bottom: 9%;
+  border-bottom: 3px solid rgb(163, 157, 157);;
 }
 
 .keep-text-con{
@@ -330,3 +332,90 @@ main .vid-con {
 .para-con p{
 	margin: 1vh 0;
 }
+
+
+.footer-con{
+  display: grid;
+  grid-template-columns: 40% 20% 20% 20%;
+  
+}
+
+
+footer{
+  padding-bottom: 6%;
+}
+
+footer img{
+  width: 100%;
+  cursor: pointer;
+
+}
+
+.footer-logo-con{
+  padding-left: 9%;
+}
+
+.footer-logo div{
+  width: 25%;
+}
+
+.footer-socials-con{
+  display: flex;
+  align-items: center;
+  gap: 0 4%;
+}
+
+.footer-socials-con div{
+  width: 6%;
+}
+
+.footer-con p{
+  color: rgb(142, 137, 137);
+  line-height: 24px;
+}
+
+.footer-con p:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.footer-con p:first-child{
+  color: black;
+  font-size: 18px;
+}
+
+.footer-con .first-p p:nth-child(6){
+  color: black;
+  font-size: 18px;
+  margin-top: 12%;
+}
+
+.footer-con .second-p p:nth-child(6), .second-p p:nth-child(13){
+  color: black;
+  font-size: 18px;
+  margin-top: 12%;
+}
+
+.footer-con .third-p p:nth-child(6), .third-p p:nth-child(10){
+  color: black;
+  font-size: 18px;
+  margin-top: 12%;
+}
+
+
+footer .second-footer{
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+footer .second-footer .united{
+  padding-left: 9%;
+  text-decoration: underline;
+}
+
+footer .second-footer p{
+  margin: 2vh 0;
+}
+
+
+
