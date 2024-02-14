@@ -66,14 +66,14 @@ function Nav() {
       <div className="free-worry">
         <ul>
           <li>
-            <FaVanShuttle /> <span>Free delivery</span>
+            <FaVanShuttle  className="nav-icon"/> <span>Free delivery</span>
           </li>
           <li>
-            <SlReload />
+            <SlReload  className="nav-icon"/>
             <span>Worry-free trial</span>
           </li>
           <li>
-            <MdLocalPolice />
+            <MdLocalPolice  className="nav-icon"/>
             <span>Warranty</span>
           </li>
         </ul>

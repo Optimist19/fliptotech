@@ -7,14 +7,20 @@ nav .caret {
   /* font-weight: bold; */
 }
 
+.free-worry .nav-icon{
+  color: aliceblue;
+}
+
 .free-worry ul {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0 2em;
   width: 100%;
-  background-color: rgb(149, 242, 211);
-  padding: 0.3em 0;
+  background-color: rgb(27, 58, 76);
+  padding: 0.5em 0;
+  color:aliceblue;
+  font-weight: 500;
 }
 
 .free-worry ul {
@@ -27,6 +33,7 @@ nav .caret {
   align-items: center;
   gap: 0 0.3em;
   cursor: pointer;
+  font-size: 12px;
 }
 
 /* second nav */

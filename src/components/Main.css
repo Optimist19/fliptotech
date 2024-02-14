@@ -40,10 +40,11 @@ main .vid-con {
 
 .inner .special {
   color: #6441d2;
-  padding: 0 0.8em;
+  padding: 0.1em 0.8em;
   margin-bottom: 4%;
   border-radius: 3px;
   border: none;
+  font-size: 0.8em;
 }
 
 .inner .h1-p {
@@ -51,13 +52,15 @@ main .vid-con {
 }
 
 .inner h1 {
-  font-size: 4em;
+  font-size: 3em;
   margin-bottom: 7%;
+  /* font-weight: 500; */
 }
 
 .inner p {
   font-size: 1.125rem;
   padding-left: 3%;
+  font-weight: 400;
 }
 
 .inner .bag-learn {
@@ -70,15 +73,17 @@ main .vid-con {
   padding: 2vh 1vw;
   border-radius: 20px;
   border: none;
-  background-color: #4545fc;
+  background-color: #1d65c1;
   color: aliceblue;
   margin-right: 1vw;
   cursor: pointer;
+  font-weight: 700;
 }
 
 .inner button:nth-child(2) {
   /* height: 30px;
 	width: 30px; */
+
   padding: 1vh 0.5vw;
   border-radius: 20px;
   border: none;
@@ -89,8 +94,13 @@ main .vid-con {
 
 .inner .learn-more .icon {
   margin-top: 3px;
-  color: blue;
+  color: #1d65c1;
   font-size: 10px;
+}
+
+.inner .bag-learn p {
+  font-weight: 700;
+  font-size: 13px;
 }
 
 .toggle {
@@ -133,7 +143,7 @@ main .vid-con {
 
 .v-r .h2-p {
   margin-left: 2vw;
-  color: aliceblue;
+  color: black;
 }
 
 .v-r .h2-p h2 {
@@ -157,9 +167,10 @@ main .vid-con {
   padding: 2vh 1vw;
   border-radius: 20px;
   border: none;
-  background-color: #4545fc;
+  background-color: #1d65c1;
   color: aliceblue;
   cursor: pointer;
+  font-weight: 700;
 }
 
 .v-r .btn-icon-p button:nth-child(2) {
@@ -175,8 +186,14 @@ main .vid-con {
 
 .v-r .btn-icon-p div .icon {
   margin-top: 3px;
-  color: blue;
+  color: #1d65c1;
   font-size: 10px;
+}
+
+.v-r .btn-icon-p p {
+  font-weight: 700;
+  font-size: 13px;
+  color: #1d65c1;
 }
 
 .vr-shop-products {
@@ -192,11 +209,14 @@ main .vid-con {
 
 .header-vr-img .header h2 {
   font-size: 3em;
+  font-weight: 500;
+
   margin-bottom: 3vh;
 }
 
 .header-vr-img .header p {
   font-size: 1em;
+  font-weight: 400;
 }
 
 .vr-img-details {
@@ -222,9 +242,11 @@ main .vid-con {
   padding: 2vh 2vw;
   border-radius: 20px;
   border: none;
-  background-color: #4545fc;
-  color: aliceblue;
+  background-color: white;
+  color: #1d65c1;
   cursor: pointer;
+  font-weight: 700;
+  border: 1px solid rgb(193, 185, 185);
 }
 
 .explore-session .explore-header {
@@ -235,7 +257,7 @@ main .vid-con {
 }
 
 .explore-session .explore-header h3 {
-  font-size: 2.5em;
+  font-size: 3em;
   margin: 2vh 0;
 }
 
@@ -246,10 +268,11 @@ main .vid-con {
   color: blue;
   border: 3px solid rgb(163, 157, 157);
   margin: 2vh 0;
+  font-weight: 700;
 }
 
 .explore-session .game-apps div {
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 .explore-session .game-apps div div {
   width: 65%;
@@ -271,6 +294,8 @@ main .vid-con {
 .img-para-con .first-div {
   display: flex;
   gap: 0 1vw;
+  font-size: 1.125rem;
+  font-weight: 500;
 }
 
 .img-para {
@@ -295,18 +320,19 @@ main .vid-con {
   display: grid;
   grid-template-columns: 0.4fr 0.6fr;
   padding-bottom: 9%;
-  border-bottom: 3px solid rgb(163, 157, 157);;
+  border-bottom: 3px solid rgb(163, 157, 157);
 }
 
-.keep-text-con{
-	margin-left: 3vw;
+.keep-text-con {
+  margin-left: 3vw;
+  font-size: 0.875em;
 }
 
 .border-line-btn {
   display: flex;
   align-items: center;
   gap: 0 1vw;
-  margin-right: 2vw;;
+  margin-right: 2vw;
 }
 
 .border-line {
@@ -316,9 +342,10 @@ main .vid-con {
   border: 2px solid rgb(142, 137, 137);
 }
 
-.border-line p{
-	padding-left: 1vw;
-	/* font-size: ; */
+.border-line p {
+  padding-left: 1vw;
+  font-weight: 400;
+  font-size: 1.125em;
 }
 
 .border-line-btn button {
@@ -327,95 +354,109 @@ main .vid-con {
   background-color: white;
   border: 2px solid rgb(142, 137, 137);
   color: rgb(142, 137, 137);
+  font-size: 14px;
+  font-weight: 500;
 }
 
-.para-con p{
-	margin: 1vh 0;
+.para-con p {
+  margin: 1vh 0;
+  font-size: .75em;
+
 }
 
 
-.footer-con{
+
+.para-con p span{
+color: #1d65c1;
+text-decoration: underline;
+}
+
+
+
+footer {
+  padding-bottom: 6%;
+  font-size: .875em;
+
+}
+
+.footer-con {
   display: grid;
   grid-template-columns: 40% 20% 20% 20%;
-  
 }
 
 
-footer{
-  padding-bottom: 6%;
-}
-
-footer img{
+footer img {
   width: 100%;
   cursor: pointer;
-
 }
 
-.footer-logo-con{
+.footer-logo-con {
   padding-left: 9%;
 }
 
-.footer-logo div{
+.footer-logo div {
   width: 25%;
 }
 
-.footer-socials-con{
+.footer-socials-con {
   display: flex;
   align-items: center;
   gap: 0 4%;
 }
 
-.footer-socials-con div{
+.footer-socials-con div {
   width: 6%;
 }
 
-.footer-con p{
+.footer-con p {
   color: rgb(142, 137, 137);
   line-height: 24px;
 }
 
-.footer-con p:hover{
+.footer-con p:hover {
   text-decoration: underline;
   cursor: pointer;
 }
 
-.footer-con p:first-child{
+.footer-con p:first-child {
   color: black;
-  font-size: 18px;
+  font-weight: 500;
 }
 
-.footer-con .first-p p:nth-child(6){
+.footer-con .first-p p:nth-child(6) {
   color: black;
-  font-size: 18px;
+  font-weight: 500;
   margin-top: 12%;
 }
 
-.footer-con .second-p p:nth-child(6), .second-p p:nth-child(13){
+.footer-con .second-p p:nth-child(6),
+.second-p p:nth-child(13) {
   color: black;
-  font-size: 18px;
+  font-weight: 500;
   margin-top: 12%;
 }
 
-.footer-con .third-p p:nth-child(6), .third-p p:nth-child(10){
+.footer-con .third-p p:nth-child(6),
+.third-p p:nth-child(10) {
   color: black;
-  font-size: 18px;
+  font-weight: 500;
   margin-top: 12%;
 }
 
-
-footer .second-footer{
+footer .second-footer {
   display: grid;
   grid-template-columns: 40% 60%;
 }
 
-footer .second-footer .united{
+footer .second-footer .united {
   padding-left: 9%;
   text-decoration: underline;
+  font-size: .875rem;
+
 }
 
-footer .second-footer p{
+footer .second-footer p {
   margin: 2vh 0;
+  font-size: .75rem;
+
 }
-
-
-

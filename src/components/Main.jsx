@@ -299,7 +299,8 @@ function Main() {
                   clicking the unsubscribe link included in our messages.
                 </p>
                 <p>
-                  Your subscription is subject to the Terms and Privacy Policy.
+                  Your subscription is subject to the <span>Terms</span> and
+                  <span>Privacy Policy</span>.
                 </p>
               </div>
             </div>
@@ -410,16 +411,15 @@ function Main() {
           <div>
             <p>META QUEST </p>
             <p>
-              Meta Quest: *Parents:* Important guidance & safety
-              warnings for children&apos;s use here. Meta accounts for ages 10+
-              on Meta Quest 2 and 3; all other Meta Quest headsets for ages 13+.
-              Certain apps, games and experiences may be suitable for a more
-              mature audience. META QUEST FEATURES, FUNCTIONALITY, AND CONTENT
-              NOTICE: Features, functionality and content are subject to change
-              or withdrawal at any time, may not be available in all areas or
-              languages or may be restricted; may require enabled software or
-              service activation, and additional terms, conditions and/or
-              charges may apply.
+              Meta Quest: *Parents:* Important guidance & safety warnings for
+              children&apos;s use here. Meta accounts for ages 10+ on Meta Quest
+              2 and 3; all other Meta Quest headsets for ages 13+. Certain apps,
+              games and experiences may be suitable for a more mature audience.
+              META QUEST FEATURES, FUNCTIONALITY, AND CONTENT NOTICE: Features,
+              functionality and content are subject to change or withdrawal at
+              any time, may not be available in all areas or languages or may be
+              restricted; may require enabled software or service activation,
+              and additional terms, conditions and/or charges may apply.
               <p>
                 Certain apps and experiences will be available by winter 2023.
               </p>
