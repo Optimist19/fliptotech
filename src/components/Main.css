@@ -1,6 +1,21 @@
+:root {
+	--color-one: #130e23;
+	--color-two: #364b44;
+	--text-color: #c2e6ef;
+	--mem-width: min(38em, calc(100vw - 4em));
+	--mem-height: min(36em, calc(100vw - 6em));
+	--slide-duration: 0.9s;
+	--text-duration: 0.9s;
+	--text-l-height: 1.5em;
+}
+
+
+
 main div {
   padding-top: 3vh;
 }
+
+
 
 video {
   width: 100%;
@@ -11,11 +26,10 @@ video {
 main .vid-con {
   background-color: rgba(0, 0, 0, 0.9);
   /* position: relative; */
-  top: 12vh;
+
   min-width: 100%;
   /* min-height: 100%; */
-  bottom: 0;
-  right: 0;
+
   padding-top: 2vh;
 }
 
@@ -119,6 +133,10 @@ main .vid-con {
   line-height: 3px;
 }
 
+.v-r-stand-alone-pic-for-mobile{
+  display: none;
+}
+
 .v-r-inner-con {
   display: flex;
   margin: 0 auto;
@@ -132,9 +150,10 @@ main .vid-con {
   background-repeat: no-repeat;
   /* padding: 4vh 4vw; */
   background-size: cover;
-  height: 50vh;
+  /* height: 50vh; */
   width: 50vw;
   border-radius: 10px;
+  padding-bottom: 2%;
 }
 
 .v-r .second {
@@ -185,8 +204,7 @@ main .vid-con {
 }
 
 .v-r .btn-icon-p div .icon {
-  margin-top: 3px;
-  color: #1d65c1;
+  margin-top: 4px;
   font-size: 10px;
 }
 
@@ -238,6 +256,8 @@ main .vid-con {
   width: 100%;
 }
 
+
+
 .vr-img-details div button {
   padding: 2vh 2vw;
   border-radius: 20px;
@@ -246,7 +266,7 @@ main .vid-con {
   color: #1d65c1;
   cursor: pointer;
   font-weight: 700;
-  border: 1px solid rgb(193, 185, 185);
+  border: 1px solid rgb(163, 157, 157);
 }
 
 .explore-session .explore-header {
@@ -259,6 +279,7 @@ main .vid-con {
 .explore-session .explore-header h3 {
   font-size: 3em;
   margin: 2vh 0;
+  text-align: center;
 }
 
 .explore-session .explore-header button {
@@ -339,7 +360,7 @@ main .vid-con {
   flex: 1;
   padding: 3vh 0;
   /* width: 20vw; */
-  border: 2px solid rgb(142, 137, 137);
+  border: 2px solid rgb(163, 157, 157)
 }
 
 .border-line p {
@@ -352,7 +373,7 @@ main .vid-con {
   padding: 2vh 2vw;
   border-radius: 40px;
   background-color: white;
-  border: 2px solid rgb(142, 137, 137);
+  border: 2px solid rgb(163, 157, 157);
   color: rgb(142, 137, 137);
   font-size: 14px;
   font-weight: 500;
@@ -360,30 +381,27 @@ main .vid-con {
 
 .para-con p {
   margin: 1vh 0;
-  font-size: .75em;
-
+  font-size: 0.75em;
 }
 
-
-
-.para-con p span{
-color: #1d65c1;
-text-decoration: underline;
+.para-con p span {
+  color: #1d65c1;
+  text-decoration: underline;
 }
 
-
+.accord{
+  display: none;
+}
 
 footer {
   padding-bottom: 6%;
-  font-size: .875em;
-
+  font-size: 0.875em;
 }
 
 .footer-con {
   display: grid;
   grid-template-columns: 40% 20% 20% 20%;
 }
-
 
 footer img {
   width: 100%;
@@ -451,12 +469,503 @@ footer .second-footer {
 footer .second-footer .united {
   padding-left: 9%;
   text-decoration: underline;
-  font-size: .875rem;
-
+  font-size: 0.875rem;
 }
 
 footer .second-footer p {
   margin: 2vh 0;
-  font-size: .75rem;
+  font-size: 0.75rem;
   padding-right: 4%;
 }
+
+@media screen and (max-width: 1165px) {
+  .inner .special {
+    margin-bottom: 2%;
+  }
+
+  .inner h1 {
+    margin-bottom: 4%;
+  }
+
+  .inner .bag-learn {
+    margin-top: 5vh;
+  }
+
+  .vr-img-details p {
+    text-align: center;
+    width: 70%;
+  }
+}
+
+
+@media screen and (max-width: 982px){
+  .img-para div p {
+    font-size: 1.2em;
+
+  }
+
+  .inner {
+    top: 18%;
+  }
+}
+
+
+@media screen and (max-width: 896px){
+  .vid-con{
+    display: none;
+  }
+
+
+  .toggle{
+    display: none;
+  }
+
+  .overlay {
+    position: static;
+    height: 100%;
+    padding-left: 4%;
+  }
+  
+  .inner {
+    position: static;
+    color: black;
+  }
+  
+  
+  .inner .h1-p {
+    width: 60vw;
+  }
+
+  .inner h1 {
+    font-size: 2em;
+  }
+  
+  .inner .h1-p p{
+    color: rgb(90, 82, 82);
+  }
+  
+  .v-r-stand-alone-pic-for-mobile{
+    display: block;
+  }
+
+  .v-r-stand-alone-pic-for-mobile div{
+    width: 100%;
+  }
+
+  .v-r-stand-alone-pic-for-mobile img{
+    width: 100%;
+  }
+
+  .v-r-inner-con {
+    display: block
+  }
+
+  .more-of-v-r {
+    width: 100%;
+  }
+
+  .more-of-v-r:first-child {
+margin-bottom: 2.5%;
+  }
+
+  .header-vr-img .header h2 {
+    font-size: 2em;
+  }
+  
+  .header-vr-img .header p {
+    font-size: 1em;
+  }
+
+  .vr-img-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .vr-img-details div div {
+    width: 70%;
+  }
+  
+  
+  .vr-img-details img {
+    width: 100%;
+  }
+
+  .v-r .btn-icon-p button:nth-child(2) {
+    font-size: 0.7rem;
+    padding-bottom: 2px;
+  }
+  
+  .explore-session .explore-header h3 {
+    font-size: 2em;
+  }
+  
+  .explore-session .game-apps div {
+    font-size: 1em;
+  }
+
+  .img-para div p {
+    font-size: 1em;
+    font-weight: 300;
+    margin-top: 3vh;
+  }
+  
+  .img-para div div {
+    width: 100%;
+  }
+
+  .img-para {
+    gap: 0 2%
+  }
+
+
+  .keep-your {
+    display: block;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 20%;
+  }
+
+  .keep-text-con {
+    margin-left: 0vw;
+  }
+
+  .border-line-btn {
+    display: block;
+    margin-right: 0vw;
+  }
+
+  .border-line-btn button {
+    padding: 3vh 2vw;
+    border-radius: 40px;
+    width: 100%;
+    margin-top: 2% ;
+  }
+  
+  .para-con p {
+    margin: 1vh 0;
+    font-size: 0.75em;
+  }
+
+
+  .footer-con {
+    display: block;
+  }
+
+  .footer-logo div {
+    width: 20%;
+  }
+  
+  
+  .footer-socials-con div {
+    width: 4%;
+  }
+
+  .footer-con p:hover {
+    text-decoration: none;
+  }
+
+  .footer-con p:first-child {
+    color: rgb(142, 137, 137);
+    }
+  
+  .footer-con .first-p p:nth-child(6) {
+    color: rgb(142, 137, 137);
+        margin-top: 0%;
+  }
+  
+  .footer-con .second-p p:nth-child(6),
+  .second-p p:nth-child(13) {
+    color: rgb(142, 137, 137);
+        margin-top: 0%;
+  }
+  
+  .footer-con .third-p p:nth-child(6),
+  .third-p p:nth-child(10) {
+    color: rgb(142, 137, 137);
+    margin-top: 0%;
+  }
+
+
+  
+  footer .second-footer {
+    display: block;
+    padding: 0 2%;
+  }
+
+  footer .second-footer{
+    padding-bottom: 12%;
+  }
+  
+  footer .second-footer .united {
+    padding-left: 0%;
+    text-decoration: underline;
+    font-size: 0.875rem;
+  }
+  
+  footer .second-footer p {
+    font-size: .75em;
+    padding-right: 0%;
+  }
+
+  .footer-con .first-p, .second-p, .third-p{
+    display: none;
+  }
+
+  .accord{
+    display: block;
+    animation: start1 2s ease-in-out;
+    font-size: 0.78em;
+    color: #364b44;
+  }
+  
+
+  .accord ul {
+    padding: 0;
+    list-style: none;
+  }
+  
+  
+  @keyframes start {
+    0% {
+      background-blend-mode: color-burn;
+    }
+    50% {
+      background-blend-mode: darken;
+    }
+    100% {
+      background-blend-mode: lighten;
+    }
+  }
+  @keyframes start1 {
+    0% {
+      background-position: -100% 0, 0 0, center;
+    }
+    100% {
+      background-position: 0 100%, 0 0, center;
+    }
+  }
+  
+  .accord input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+  
+  
+  .accord ul.item-list {
+    max-width: var(--mem-width);
+    margin: 0 auto;
+  }
+  
+  .accord img {
+    max-width: 100%;
+  }
+  
+  .accord img[width][height] {
+    height: auto;
+  }
+  
+  /* Let SVG scale without boundaries */
+  .accord img[src$=".svg"] {
+    width: 100%;
+    height: auto;
+    max-width: none;
+  }
+  
+  .accord input {
+    display: none;
+  }
+  
+  .accord label {
+    width: 100%;
+    /*   display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "h4 control" "img img";
+    margin-bottom: 1em;
+    border-radius: 0.5em;
+    background-color: #f6edfe;
+    transition: all 0.35s ease-in-out;
+    padding: 0.5em;
+  }
+  
+  .accord label > h4 {
+    height: var(--text-l-height);
+    overflow: hidden;
+    /*   text-overflow: ellipsis;
+    animation: text-hide var(--text-duration) ease-in-out; */
+    transition: height var(--text-duration) ease-in-out;
+    grid-area: h4;
+  }
+  
+  .accord label > .control {
+    grid-area: control;
+  }
+  
+  .accord label > .slider {
+    grid-area: img;
+  }
+  
+  .accord .slider {
+    margin-top: 1em;
+    overflow: hidden;
+    transition: all var(--slide-duration);
+    height: 0;
+  }
+  
+  .accord  input:checked + label > .slider {
+    /*  animation: details-show var(--slide-duration) ease-in-out; */
+    transition: height var(--slide-duration) ease-in-out;
+    height: var(--mem-height);
+  }
+  
+  .accord input:checked + label > h4 {
+    height: calc(var(--text-l-height) * 3);
+    /* animation: text-show var(--text-duration) ease-in-out; */
+    transition: height var(--text-duration) ease-in-out;
+  }
+  
+  .accord  input:not(:checked) + label > .slider {
+    /* animation: details-hide var(--slide-duration) ease-in-out; */
+    transition: height var(--slide-duration) ease-in-out;
+    height: 0;
+  }
+  
+  .accord .control {
+    display: block;
+    width: var(--text-l-height);
+    height: var(--text-l-height);
+    background: url(https://lidachk.github.io/cssBayan/cssBayan/assets/control.svg);
+    filter: invert(1%) sepia(42%) saturate(1672%) hue-rotate(167deg)
+      brightness(101%) contrast(87%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+  
+    opacity: 0;
+  }
+  
+  input:checked ~ label > .control {
+    transform: rotate(-1.5turn);
+    -webkit-transform: rotate(-1.5turn);
+    -moz-transform: rotate(-1.5turn);
+    -ms-transform: rotate(-1.5turn);
+    -o-transform: rotate(-1.5turn);
+  }
+  
+  @keyframes details-show {
+    0% {
+      height: 0;
+    }
+  
+    100% {
+      height: var(--mem-height);
+    }
+  }
+  
+  @keyframes details-hide {
+    0% {
+      height: var(--mem-height);
+    }
+  
+    100% {
+      height: 0;
+    }
+  }
+  
+  @keyframes text-show {
+    0% {
+      height: var(--text-l-height);
+    }
+  
+    100% {
+      height: calc(var(--text-l-height) * 3);
+    }
+  }
+  
+  @keyframes text-hide {
+    0% {
+      height: calc(var(--text-l-height) * 3);
+    }
+  
+    100% {
+      height: var(--text-l-height);
+    }
+  }
+  
+  @keyframes glow {
+    0% {
+      filter: drop-shadow(0 -0.2em 0.5em #5ed8d8);
+    }
+  
+    100% {
+      filter: drop-shadow(0 -0.2em 0.8em #5ed8d8);
+    }
+  }
+  
+  .accord .label:active > .control,
+  .accord .label:active {
+    opacity: 1;
+    animation: 0.9s glow ease-in-out infinite alternate;
+  }
+  
+  @media (hover: hover) {
+    .accord   li,
+    .accord   label {
+      cursor: pointer;
+    }
+  
+    .accord   input:not(:checked) + label:hover > .slider {
+      /* animation: details-show var(--slide-duration) ease-in-out; */
+      transition: height var(--slide-duration) ease-in-out;
+      height: var(--mem-height);
+    }
+  
+    .accord   input:not(:checked) + label:not(:hover) > .slider {
+      /* animation: details-hide var(--slide-duration) ease-in-out; */
+      transition: height var(--slide-duration) ease-in-out;
+      height: 0;
+    }
+  
+    .accord   input:not(:checked) + label:hover > h4 {
+      /* animation: text-show var(--text-duration) ease-in-out; */
+      transition: height var(--text-duration) ease-in-out;
+      height: calc(var(--text-l-height) * 3);
+    }
+  
+    .accord    input:not(:checked) + label:not(:hover) > h4 {
+      /* animation: text-hide var(--text-duration) ease-in-out; */
+      transition: height var(--text-duration) ease-in-out;
+      height: var(--text-l-height);
+ 
+    }
+  
+    .accord   ul:hover .control {
+      opacity: 1;
+    }
+  
+    .accord  input:not(:checked) + label:hover > .control {
+      transform: rotate(1.25turn);
+      -webkit-transform: rotate(1.25turn);
+      -moz-transform: rotate(1.25turn);
+      -ms-transform: rotate(1.25turn);
+      -o-transform: rotate(1.25turn);
+      filter: drop-shadow(0 -0.2em 0.5em #5ed8d8);
+    }
+  }
+  
+
+  
+}	
+/* --lbg: "https://lidachk.github.io/cssBayan/cssBayan/assets/lbg370.png";
+--lbg-50: "https://lidachk.github.io/cssBayan/cssBayan/assets/lbg50.png"; */

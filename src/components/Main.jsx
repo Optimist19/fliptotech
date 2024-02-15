@@ -27,6 +27,7 @@ import insta from "../img/insta.svg";
 import x from "../img/twitter.svg";
 import youtube from "../img/youtube.svg";
 import logo from "../img/Meta-Logo.png";
+import standalonepic from "../img/photo-1593508512255-86ab42a8e620.avif";
 
 import { PiCaretDownLight } from "react-icons/pi";
 
@@ -84,6 +85,12 @@ function Main() {
           <button onClick={toggleVideo}>
             {isPlaying ? <IoPlayOutline /> : <PiPauseThin />}
           </button>
+        </div>
+
+        <div className="v-r-stand-alone-pic-for-mobile">
+          <div>
+            <img src={standalonepic} alt="" />
+          </div>
         </div>
 
         <div className="v-r">
@@ -402,13 +409,69 @@ function Main() {
             <p>Workplace Help Center</p>
             <p>Meta Verified</p>
           </div>
+
+          <div className="accord">
+            <ul className="item-list">
+              <li className="item1">
+                <input type="radio" name="point" id="slide1" checked />
+                <label htmlFor="slide1" className="label">
+                  <h4>
+                    Site terms and policies
+                    <br />
+                    Community standards
+                    <br />
+                    Terms
+                    <br />
+                    Cookie policy
+                    <br />
+                    Privacy policy
+                  </h4>
+                  <span className="control"></span>
+                  <div className="slider "></div>
+                </label>
+              </li>
+              <li className="item2">
+                <input type="radio" name="point" id="slide2" />
+                <label htmlFor="slide2" className="label">
+                  <h4>
+                    Smart glasses
+                    <br />
+                    Shop Ray-Ban Meta smart glasses
+                    <br />
+                    Ray-Ban Stories
+                    <br />
+                    Privacy information
+                  </h4>
+                  <span className="control"></span>
+                  <div className="slider "></div>
+                </label>
+              </li>
+              <li className="item3">
+                <input type="radio" name="point" id="slide3" />
+                <label htmlFor="slide3" className="label">
+                  <h4>
+                    About us
+                    <br />
+                    About Meta
+                    <br />
+                    Media gallery
+                    <br />
+                    Brand resources
+                    <br />
+                  </h4>
+                  <span className="control"></span>
+                  <div className="slider "></div>
+                </label>
+              </li>
+            </ul>
+          </div>
         </div>
 
         <div className="second-footer">
           <div className="united">
             <p>United States &#40;English&#41;</p>
           </div>
-          <div>
+          <div className="p-con">
             <p>META QUEST </p>
             <p>
               Meta Quest: *Parents:* Important guidance & safety warnings for
@@ -420,21 +483,23 @@ function Main() {
               any time, may not be available in all areas or languages or may be
               restricted; may require enabled software or service activation,
               and additional terms, conditions and/or charges may apply.
-              <p>
-                Certain apps and experiences will be available by winter 2023.
-              </p>
-              <p>
-                META QUEST IMPORTANT SAFETY NOTICE{" "}
-                <a
-                  href="https://www.meta.com/quest/quest-2-facial-interface-recall/"
-                  target="_blank">
-                  {" "}
-                  https://www.meta.com/quest/quest-2-facial-interface-recall/
-                </a>
-                .
-              </p>
-              <p></p>Financing Options. You may be offered financing options for
-              your Meta purchases. Learn more <a href="#">here</a>.
+            </p>
+            <p>
+              Certain apps and experiences will be available by winter 2023.
+            </p>
+            <p>
+              META QUEST IMPORTANT SAFETY NOTICE{" "}
+              <a
+                href="https://www.meta.com/quest/quest-2-facial-interface-recall/"
+                target="_blank">
+                {" "}
+                https://www.meta.com/quest/quest-2-facial-interface-recall/
+              </a>
+              .
+            </p>
+            <p>
+              Financing Options. You may be offered financing options for your
+              Meta purchases. Learn more <a href="#">here</a>.
             </p>
 
             <p>
